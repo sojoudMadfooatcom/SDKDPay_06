@@ -32,3 +32,9 @@ let testData = [
 
 
 let testDatastr  = [banksName( name: "kjs"),banksName( name: "kjs3"),banksName( name: "kjs4")]
+
+struct banks_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}
