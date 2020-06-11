@@ -53,7 +53,7 @@ struct BankTable_Previews: PreviewProvider {
         BankTable()
     }
 }
-private class observeData : ObservableObject {
+fileprivate class observeData : ObservableObject {
     
     
     var dataBinding : [banksName] = [banksName(name: "B1"), banksName(name: "B2") ,banksName(name: "B3"),banksName(name: "B4")]
