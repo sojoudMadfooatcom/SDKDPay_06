@@ -60,15 +60,13 @@ class observeData : ObservableObject {
     
     var dataBinding : [banksName] = [banksName(name: "B1"), banksName(name: "B2") ,banksName(name: "B3"),banksName(name: "B4")]
    @Published var dataResult  : [BankModel] = []//[BankModel(login: "wq", id: 0)]
-    var bar :BarProtocol
+   @Published  var bar :BarProtocol?
     init() {
-        
-       
     geth()
         
     }
     func geth(){
-         dataResult =  self.bar.get_Data(userId: 90)
+        self.dataResult =  self.bar?.get_Data(userId: 90) ?? []
     }
 //        AF.request("https://api.github.com/users/hadley/orgs").responseDecodable { (DD :DataResponse<[BankModel], AFError>) in
 //          //  print(DD.value)
