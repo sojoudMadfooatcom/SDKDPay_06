@@ -7,13 +7,13 @@
 //
 
 import SwiftUI
-fileprivate struct banksName : Identifiable {
+struct banksName : Identifiable {
     var id = UUID()
     
     var name : String
 }
 
-fileprivate struct Tutor: Identifiable {
+struct Tutor: Identifiable {
     var id = UUID()
     var name: String
     var headline: String
