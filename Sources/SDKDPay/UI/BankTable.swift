@@ -38,7 +38,7 @@ public struct BankTable: View {
             .padding(12.0)
             
                   
-        }.navigationBarTitle(Text("Data Binding"))
+        }
     }
        
         
